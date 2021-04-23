@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="about.css">
+    <title></title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id=TopNav>
+      <script type="text/babel">
+      class NavBar extends React.Component {
+        render(){
+          return(
+            <div>
+            <ul id="nav">
+              <li ><a href="Home.html">Home</a></li>
+              <li ><a href="About.html">About Us</a></li>
+              <li ><a href="contact.html">Contact Us</a></li>
+              <li ><a href="#">Your Page</a></li>
+              <li><a href="#">Catergories</a></li>
+              <li><a href="#">Users</a></li>
+              <li><input type="text" placeholder="Search"/></li>
+              <li >
+              <button type="button" onClick="loginoutForm()" id="loginOutBtn">Logout</button>
+              </li>
+            </ul>
+             </div>
+          );
+        }
+      }
+      ReactDOM.render(<NavBar/>, document.getElementById('TopNav'));
+      </script>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <!--information about website and possibly a bit about its creation -->
+    <p>This website is designed to be used to display photographic work. It is mostly a shell at this point.</p>
+
+
+  </body>
+</html>

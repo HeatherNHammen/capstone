@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: darkgray;
+}
+/* Navbar*/
+.TopNav{
+  background-color: black;
+  width: 100%;
+}
+#nav{
+  background-color: black;
+  list-style-type: none;
+  float:left;
+  margin: 0;
+ padding: 0;
+ overflow: hidden;
+ width: 100%;
+}
+#nav li a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+#nav li a:hover{
+  background-color:lightblue;
+}
+#nav li input{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button{
+  float: right;
+  background-color: darkgray;
+  color: white;
+  display: block;
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button:hover{
+  background-color:blue;
+}
+h1{
+  font-size: 60px;
+  font-family: serif;
+  padding: 10px;
+  text-align: center;
+}
+#row{
+  display: flex;
+  float: left;
+}
+#columnLeft{
+  float: left;
+  flex:20%;
+  padding:20px;
+
+}
+#columnLeft h2{
+  margin-bottom: -5px;
+  font-size: 40px;
+  text-align: center;
+}
+#categories{
+  list-style-type: none;
+  color: black;
+  text-align: center;
+  margin-right: 12%;
+}
+#categories a{
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+#columnRight{
+  float: left;
+  flex: 80%;
+}
+#columnRight img{
+  width: 100%;
+  border-radius: 15px;
+}
+#columnRight p{
+  font-size: 30px;
+}
+#midRow{
+  display: flex;
+  margin-left:10%;
+  float: left;
+}
+#midRow img{
+  width: 70%
+}
+#midRow h4{
+  text-align: center;
+  margin-right: 30%;
+  font-size: 24px;
+}

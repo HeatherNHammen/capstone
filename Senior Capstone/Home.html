@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="home.css">
+    <title></title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id= TopNav> </div>
+
+    <script type="text/babel">
+    class NavBar extends React.Component {
+      render(){
+        return(
+          <div>
+          <ul id="nav">
+            <li ><a href="Home.html">Home</a></li>
+            <li ><a href="About.html">About Us</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+            <li ><a href="#">Your Page</a></li>
+            <li><a href="#">Catergories</a></li>
+            <li><a href="#">Users</a></li>
+            <li><input type="text" placeholder="Search"/></li>
+            <li >
+            <button type="button" onClick="loginoutForm()" id="loginOutBtn">Login</button>
+            </li>
+          </ul>
+           </div>
+
+        );
+      }
+    }
+    ReactDOM.render(<NavBar/>, document.getElementById('TopNav'));
+    </script>
+    <br><br>
+    <h1>Document Photography</h1>
+    <div id=upper></div>
+      <script type="text/babel">
+      class UpperRow extends React.Component {
+        render(){
+          return(
+            <div id="row">
+            <div id="columnLeft">
+            <h2>Categories</h2>
+            <ul id="categories">
+            <li><a href="portrait">Portrait</a></li><br/>
+            <li><a href="wildlife">Wildlife</a></li><br/>
+            <li><a href="nature">Nature</a></li><br/>
+            <li><a href="sports">Sports</a></li><br/>
+            <li><a href="adventure">Adventure</a></li><br/>
+            </ul>
+            </div>
+            <div id="columnRight">
+            <img src="images/Regal Horned Lizard portrait.jpg" alt=""/>
+            <p>A photography website for photographers of all skill levels to exhibit and share their photos and discuss different techniques and skills.</p>
+            </div>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(<UpperRow/>, document.getElementById('upper'));
+      </script>
+
+    <div id=middlePage></div>
+      <script type="text/babel">
+        class Middle extends React.Component {
+          render(){
+            return(
+              <div id= "midRow">
+              <div id="col1">
+              <div className="row1">
+              <img src="images/Regal Horned Lizard portrait.jpg"/>
+              <h4>Lizard McLizard</h4>
+              </div>
+              <div className="row2">
+              <img src="images/Regal Horned Lizard portrait.jpg" />
+              <h4>Lizard McLizard</h4>
+              </div>
+              </div>
+              <div id="col2">
+              <div className="row1">
+              <img src="images/Regal Horned Lizard portrait.jpg"/>
+              <h4>Lizard McLizard</h4>
+              </div>
+              <div className="row2">
+              <img src="images/Regal Horned Lizard portrait.jpg" />
+              <h4>Lizard McLizard</h4>
+              </div>
+              </div>
+              <div id="col3">
+              <div className="row1">
+              <img src="images/Regal Horned Lizard portrait.jpg"/>
+              <h4>Lizard McLizard</h4>
+              </div>
+              <div className="row2">
+              <img src="Regal Horned Lizard portrait.jpg" />
+              <h4>Lizard McLizard</h4>
+              </div>
+              </div>
+              </div>
+        );
+        }
+        }
+        ReactDOM.render(<Middle/>, document.getElementById('middlePage'));
+      </script>
+
+  </body>
+</html>

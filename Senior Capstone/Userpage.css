@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: darkgray;
+}
+/* Navbar*/
+.TopNav{
+  background-color: black;
+  width: 100%;
+}
+#nav{
+  background-color: black;
+  list-style-type: none;
+  float:left;
+  margin: 0;
+ padding: 0;
+ overflow: hidden;
+ width: 100%;
+}
+#nav li a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+#nav li a:hover{
+  background-color:lightblue;
+}
+#nav li input{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button{
+  float: right;
+  background-color: darkgray;
+  color: white;
+  display: block;
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button:hover{
+  background-color:blue;
+}
+
+/* upper part of page with profile and slideshow*/
+.row {
+display: flex;
+float: left;
+}
+.column{
+  float: left;
+}
+/*Profile*/
+.left{
+  float:left;
+  flex:30%;
+  padding:20px;
+  }
+  .profpic img{
+    width: 60%;
+    height: inherit;
+    border-radius: 40px;
+  }
+  .profpic h4{
+    color: white;
+    text-align: left;
+  }
+/*slideshow*/
+.right{
+  float: left;
+  flex: 70%;
+  padding:20px;
+}
+.slides{
+  width: 800px;
+  height: 500px;
+  float: right;
+ overflow: hidden;
+ display: none;
+}
+.slides:first-child{
+  display:block;
+}
+.slides img{
+  border-radius: 30px;
+  border-color: black;
+  width: inherit;
+  height: inherit;
+}
+/* slight fading effect*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*albums*/
+.PhotoAlbums{
+  float: right;
+  flex: 70%;
+  padding: 20px;
+}
+.middle{
+  display: flex;
+}
+.first{
+  float:left;
+  flex:33%;
+  padding:20px;
+}
+.sec{
+  float:left;
+  flex:33%;
+  padding:20px;
+}
+.third{
+  float:left;
+  flex:33%;
+  padding:20px;
+}
+.lower{
+  display: flex;
+}
+.first img{
+  border-radius: 10px;
+  width: 30%
+}
+.first h5{
+  padding-left: 20px;
+  display: inline;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: -35px;
+}
+.sec img{
+  border-radius: 10px;
+  width: 30%
+}
+.sec h5{
+  padding-left: 20px;
+  display: inline;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: -35px;
+}
+.third img{
+  border-radius: 10px;
+  width: 30%
+}
+.third h5{
+  padding-left: 20px;
+  display: inline;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: -35px;
+}

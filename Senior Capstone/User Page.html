@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Userpage.css">
+  <script type= "text/javascript" src="UserPage.js"></script>
+  <title> (Name) Page </Title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+   <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  <body>
+    <div id= TopNav> </div>
+
+    <script type="text/babel">
+    class NavBar extends React.Component {
+      render(){
+        return(
+          <div>
+          <ul id="nav">
+            <li ><a href="Home.html">Home</a></li>
+            <li ><a href="About.html">About Us</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+            <li ><a href="D:\Senior Capstone\User Page.html">User Page</a></li>
+            <li><a href="#">Catergories</a></li>
+            <li><a href="#">Users</a></li>
+            <li><input type="text" placeholder="Search"/></li>
+            <li >
+            <button type="button" onClick="loginoutForm()" id="loginOutBtn">Logout</button>
+            </li>
+          </ul>
+           </div>
+
+        );
+      }
+    }
+    ReactDOM.render(<NavBar/>, document.getElementById('TopNav'));
+    </script>
+    <br>
+    <br>
+
+    <!-- set up side profile area on left of Page... need img, name, intro-->
+    <div class="container upperPage">
+    <div class="row">
+    <div class="column left" id= userProf>
+      <div class="profpic">
+        <img src="images/Heather&mongeese.jpg" alt="">
+        <br>
+        <h4 id=Name> Heather </h4>
+      </div>
+      <div class="PersonalIntro">
+        <!--I dont know how to make a paragraph that the user inputs and is different on every page -->
+        <p id=userIntro> Hi! I am Heather. I like wildlife and nature phototgraphy. </p>
+      </div>
+    </div>
+
+    <!--right side &center of page-->
+
+    <!--slide show of 10 images -->
+    <div class="column right">
+      <div class="slides fade">
+        <!-- how to make it so it is given an image -->
+        <img src="Regal Horned Lizard portrait.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/SCAN0087_edited.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/DSCN3627.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/birbs.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/EarlySunset.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/penguins gambling.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/SCAN0073.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/SCAN0076.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/SCAN0081.jpg" alt="">
+      </div>
+      <div class="slides fade">
+        <img src="images/SCAN0085.jpg" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
+
+<div class="PhotoAlbums" id= albumDisplay>
+  <div class="albums">
+    <div class="row middle">
+      <div class= "column first">
+      <a href="Cyanotype.html">  <img  src="images/SCAN0081.jpg" id="cyanAlbum"></a>
+        <!-- how to fetch and display album name?-->
+        <h5>Cyanotypes</h5>
+      </div>
+      <div class= "column sec">
+        <img src="images/Regal Horned Lizard portrait.jpg" alt="">
+        <h5></h5>
+      </div>
+      <div class= "column third">
+        <img src="images/Regal Horned Lizard portrait.jpg" alt="">
+        <h5></h5>
+      </div>
+  </div>
+  <div class="row lower">
+    <div class= "column first">
+      <img src="images/Regal Horned Lizard portrait.jpg" alt="">
+      <h5></h5>
+    </div>
+    <div class= "column sec">
+      <img src="images/Regal Horned Lizard portrait.jpg" alt="">
+      <h5></h5>
+    </div>
+    <div class= "column third">
+      <img src="images/Regal Horned Lizard portrait.jpg" alt="">
+      <h5></h5>
+    </div>
+</div>
+
+</div> <!--end of photo album display-->
+</div>
+
+
+
+
+
+        </html>

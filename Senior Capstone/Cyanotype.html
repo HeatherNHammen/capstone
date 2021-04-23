@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="cyanotype.css">
+
+  <title></title>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+  <div id= TopNav> </div>
+
+  <script type="text/babel">
+    class NavBar extends React.Component {
+      render(){
+        return(
+        <div>
+          <ul id="nav">
+            <li ><a href="Home.html">Home</a></li>
+            <li ><a href="About.html">About Us</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+            <li ><a href="UserPage.html">Your Page</a></li>
+            <li><a href="#">Catergories</a></li>
+            <li><a href="#">Users</a></li>
+            <li><input type="text" placeholder="Search"/></li>
+            <li >
+              <button type="button" onClick="loginoutForm()" id="loginOutBtn">Logout</button>
+            </li>
+          </ul>
+        </div>
+
+        );
+      }
+    }
+    ReactDOM.render(<NavBar/>, document.getElementById('TopNav'));
+  </script>
+  <br/><br/>
+
+  <!--slide show of photo album-->
+  <div class="container">
+    <div class="slides">
+      <img src="cyanotypes/SCAN0073.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0076.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0078.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0079.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0080.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0081.jpg" style= "width:100%">
+    </div>
+    <div class="slides">
+      <img src="cyanotypes/SCAN0084.jpg" style= "width:100%">
+    </div>
+    <!-- Next and previous buttons-->
+    <a class="previous" onclick="move(-1)">&#10094;</a>
+    <a class="next" onclick="move(1)">&#10095;</a>
+    <h1>Cyanotypes</h1>
+
+  <!-- thumbnail-->
+  <div class="row">
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0073.jpg" style= "width:100%" onclick="current(1)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0076.jpg" style= "width:100%" onclick="current(2)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0078.jpg" style= "width:100%" onclick="current(3)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0079.jpg" style= "width:100%" onclick="current(4)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0080.jpg" style= "width:100%" onclick="current(5)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0081.jpg" style= "width:100%" onclick="current(6)">
+    </div>
+    <div class="column">
+      <img class="demo pointer" src="cyanotypes/SCAN0084.jpg" style= "width:100%" onclick="current(7)">
+    </div>
+  </div>
+  </div>
+
+</body>
+<script type= "text/javascript" src="cyanotype.js"></script>
+</html>

@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;
+}
+/* Navbar*/
+.TopNav{
+  background-color: black;
+  width: 100%;
+}
+#nav{
+  background-color: black;
+  list-style-type: none;
+  float:left;
+  margin: 0;
+ padding: 0;
+ overflow: hidden;
+ width: 100%;
+}
+#nav li a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+#nav li a:hover{
+  background-color:lightblue;
+}
+#nav li input{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button{
+  float: right;
+  background-color: darkgray;
+  color: white;
+  display: block;
+  padding: 16px 16px;
+  text-align: center;
+  border-radius: 4px;
+  border-color: black;
+}
+#nav li button:hover{
+  background-color:blue;
+}
+
+/*slideshow of album */
+img{
+  vertical-align: middle;
+  max-height: 60%;
+}
+.container{
+  margin-left: 10%;
+  position: relative;
+  margin-top: 40px;
+  max-width: 80%;
+  max-height: inherit;
+  align-content: center;
+}
+.slides:first-child{
+  display: block;
+}
+.slides{
+  overflow-y: hidden;
+  display: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.previous:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+h1{
+  background-color: black;
+  text-align: center;
+  color: lightblue;
+}
+.row :after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+float: left;
+width: calc(100%/7);
+}
+.demo{
+  opacity: 0.7;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
